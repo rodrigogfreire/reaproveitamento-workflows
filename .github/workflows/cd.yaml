@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Valor Parametro
-        run: echo "Executando o deploy no ambiente de ${{ inputs.ambiente == 'producao1' }}"
+        run: echo "Executando o deploy no ambiente de ${{ inputs.ambiente }}"
 
       - name: Valor Secret
         run: echo "Executando o deploy no ambiente de ${{ secrets.AMBIENTE_ENTREGA }}"
