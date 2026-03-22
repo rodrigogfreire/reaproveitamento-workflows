@@ -20,5 +20,4 @@ jobs:
     uses: rodrigogfreire/reaproveitamento-workflows/.github/workflows/cd.yaml@main
     with:
       ambiente: producao1
-    secrets:
-      entrega: ${{ secrets.AMBIENTE_ENTREGA }}      
+    secrets: inherit

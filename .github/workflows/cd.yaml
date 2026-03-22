@@ -6,11 +6,7 @@ on:
         type: string
         default: "desenvolvimento"
         required: true
-        description: "Ambiente de Deploy"        
-    secrets:
-      entrega:
-        required: true
-        description: "Valor secret"
+        description: "Ambiente de Deploy"
 
 jobs:
   deploy:
@@ -20,4 +16,4 @@ jobs:
         run: echo "Executando o deploy no ambiente de ${{ inputs.ambiente == 'producao1' }}"
 
       - name: Valor Secret
-        run: echo "Executando o deploy no ambiente de ${{ secrets.entrega }}"
+        run: echo "Executando o deploy no ambiente de ${{ secrets.AMBIENTE_ENTREGA }}"
