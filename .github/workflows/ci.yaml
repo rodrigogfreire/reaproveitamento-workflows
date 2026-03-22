@@ -18,3 +18,5 @@ jobs:
   CD:
     needs: [CI]
     uses: rodrigogfreire/reaproveitamento-workflows/.github/workflows/cd.yaml@main
+    with:
+      ambiente: producao
