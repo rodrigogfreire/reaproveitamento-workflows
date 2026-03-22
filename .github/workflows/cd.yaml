@@ -8,7 +8,7 @@ on:
         required: true
         description: "Ambiente de Deploy"        
     secrets:
-      ambiente-entrega:
+      entrega:
         required: true
         description: "Valor secret"
 
