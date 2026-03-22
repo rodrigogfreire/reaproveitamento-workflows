@@ -17,4 +17,4 @@ jobs:
         run: echo "Publicação da Release final"
   CD:
     needs: [CI]
-    uses: rodrigogfreire/reaproveitamento-workflows/.github/cd.yaml@main
+    uses: rodrigogfreire/reaproveitamento-workflows/.github/workflows/cd.yaml@main
