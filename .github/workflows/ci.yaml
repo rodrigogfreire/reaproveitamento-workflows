@@ -18,7 +18,7 @@ jobs:
   CD:
     needs: [CI]
     uses: rodrigogfreire/reaproveitamento-workflows/.github/workflows/cd.yaml@main
-    secrets:
-      entrega: ${{ secrets.AMBIENTE_ENTREGA }}
     with:
-      ambiente: producao
+      ambiente: producao1
+    secrets:
+      entrega: ${{ secrets.AMBIENTE_ENTREGA }}      
